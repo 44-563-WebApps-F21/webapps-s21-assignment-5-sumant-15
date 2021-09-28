@@ -11,6 +11,13 @@
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        .img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+    </style>
 
 </head>
 <body>
@@ -58,19 +65,19 @@
     The div row with class col-md having animals animals breaks first because this div is targeted with this desktop for bootstrap
 </div>
 </div>
-<br/>
+
 <div class="container">
-    <img src="images/cheetah.jpg" class="img-fluid" width="400" height="400" alt="cheetah">
-    <img src="images/giraffe.png" class="img-fluid" width="400" height="400" alt="girafee">
-    <img src="images/horse.jpg" class="img-fluid" width="400" height="400" alt="horse">
+    <img src="images/cheetah.jpg" class="img-responsive" alt="cheetah" width="400" height="400">
+    <img src="images/giraffe.jpg" class="img-responsive"  alt="girafee" width="400" height="400">
+    <img src="images/horse.jpg" class="img-responsive"  alt="horse" width="400" height="400">
 </div>
-<br/>
+
 <div class="container">
-    <img src="images/cheetah.jpg" class="img-thumbnail" width="400" height="400" alt="cheetah">
-    <img src="images/giraffe.png" class="img-thumbnail" width="400" height="400" alt="girafee">
-    <img src="images/horse.jpg" class="img-thumbnail" width="400" height="400" alt="horse">
+    <img src="images/cheetah.jpg" class="img-thumbnail img" alt="cheetah" >
+    <img src="images/giraffe.jpg" class="img-thumbnail img" alt="girafee">
+    <img src="images/horse.jpg" class="img-thumbnail img"  alt="horse">
 </div>
-<br/><br/>
+
 <table class="table table-dark table-bordered table-striped table-hover caption-top">
     <caption>List of Animals</caption>
     <thead class="table-dark">
