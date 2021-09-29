@@ -12,11 +12,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <style>
-        .img {
-            height: 400px;
-            width: 400px;
-            object-fit: cover;
+        /* .container{
+          display:flex;
+        } */
+
+        .images {
+            display: flex;
         }
+
+        .img {
+            width: 400px;
+            height: 400px;
+            /* object-fit: cover; */
+        }
+        .img:not(:last-child) {
+             margin-right: 5px;
+         }
+        
     </style>
 
 </head>
@@ -67,18 +79,21 @@
 </div>
 
 <div class="container">
-    <img src="images/cheetah.jpg" class="img-responsive" alt="cheetah" width="400" height="400">
-    <img src="images/giraffe.jpg" class="img-responsive"  alt="girafee" width="400" height="400">
-    <img src="images/horse.jpg" class="img-responsive"  alt="horse" width="400" height="400">
+  <h2>Image Responsive</h2>
+    <img src="images/cheetah.jpg" class="img-responsive img" alt="cheetah" width="900" height="400">
+    <img src="images/giraffe.jpg" class="img-responsive img"  alt="girafee" width="400" height="400">
+    <img src="images/horse.jpg" class="img-responsive img"  alt="horse" width="400" height="400">
 </div>
 
-<div class="container">
-    <img src="images/cheetah.jpg" class="img-thumbnail img" width="400" height="400" alt="cheetah" >
-    <img src="images/giraffe.jpg" class="img-thumbnail img" width="400" height="400" alt="girafee">
-    <img src="images/horse.jpg" class="img-thumbnail img" width="400" height="400"  alt="horse">
+<div style="margin-top: 10px;" class="container">
+  <h2>Image Thumbnails</h2>
+    <img src="images/cheetah.jpg" class="img-thumbnail img" width="400" height="200" alt="cheetah" >
+    <img src="images/giraffe.jpg" class="img-thumbnail img" width="400" height="200" alt="girafee">
+    <img src="images/horse.jpg" class="img-thumbnail img" width="400" height="200"  alt="horse">
 </div>
 
 <table class="table table-dark table-bordered table-striped table-hover caption-top">
+  <h2>Table</h2>
     <caption>List of Animals</caption>
     <thead class="table-dark">
       <tr>
@@ -129,34 +144,36 @@
   </table>
 
   <br/>
-<div class="container">
-  <button type="button" class="btn btn-primary">C</button>
-  <button type="button" class="btn btn-secondary">H</button>
-  <button type="button" class="btn btn-success">A</button>
-  <button type="button" class="btn btn-danger">G</button>
-  <button type="button" class="btn btn-warning">A</button>
-  <button type="button" class="btn btn-info">N</button>
-  <br/>
-  <br/>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <button type="button" class="btn btn-success">C</button>
-    <button type="button" class="btn btn-success">H</button>
+  <div class="container">
+    <h2>Buttons and Button Groups</h2>
+    <button type="button" class="btn btn-primary">C</button>
+    <button type="button" class="btn btn-secondary">H</button>
     <button type="button" class="btn btn-success">A</button>
-  </div>
-<br/>
-  <div class="btn-toolbar" role="toolbar" aria-label="Second group">
-    <button type="button" class="btn btn-warning">G</button>
+    <button type="button" class="btn btn-danger">G</button>
     <button type="button" class="btn btn-warning">A</button>
+    <button type="button" class="btn btn-info">N</button>
+    <br/>
+    <br/>
+    <div class = "btn-toolbar" role = "toolbar" aria-label="First group success">
+      <button type="button" class="btn btn-success">H</button>
+      <button type="button" class="btn btn-success">V</button>
+      <button type="button" class="btn btn-success">A</button>
+      </div>
+      <br/>
+      <div class = "btn-toolbar" role = "toolbar" aria-label="Second group warning">
+          <button type="button" class="btn btn-warning">C</button>
+          <button type="button" class="btn btn-warning">A</button>
+      </div>
+      <br/>
+      <div class = "btn-toolbar" role = "toolbar" aria-label="Third group danger">
+          <button type="button" class="btn btn-danger">R</button>
+      </div>
   </div>
-<br/>
-  <div class="btn-toolbar" role="toolbar" aria-label="Third group">
-    <button type="button" class="btn btn-danger">N</button>
-  </div>
-</div>
 
 
 <br/>
 <div class="dropdown">
+  <h2>DropDowns</h2>
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown links
     </a>
@@ -218,6 +235,7 @@
     <p class="card-text">The horse or domestic horse is a domesticated one-toed hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant species in the subgenus Equus.</p>
     <a href="https://www.horse.com/" class="btn btn-primary">Horse</a>
   </div>
+</div>
 </div>
 </div>
 </body>
